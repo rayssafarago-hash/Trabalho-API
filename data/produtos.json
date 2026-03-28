@@ -1,15 +1,10 @@
-{
-
-"id": 1,
-
-"nome": "Notebook",
-
-"descricao": "...",
-
-"preco": 2500.00,
-
-"quantidade": 15,
-
-"categoria": "Tech"
-
-}
+[
+  {
+    "id": 2,
+    "nome": "Mouse",
+    "descricao": "Mouse sem fio azul",
+    "preco": 320,
+    "quantidade": 10,
+    "categoria": "Tech"
+  }
+]

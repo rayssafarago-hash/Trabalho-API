@@ -1,6 +1,6 @@
 const express = require('express');
 const fs = require ('fs');
-
+const rotasProdutos = require('./routes/produtos');
 const app = express();
 const PORT = 3000;
 
@@ -8,7 +8,7 @@ app.use (express.json());
 
 app.use('/produtos', rotasProdutos);
 
-app.use('/', (rreq, res)=>{
+app.get('/', (req, res)=>{
     res.json({
         mensagem: 'API de estoque Rodando',
         endpoints: {
@@ -16,7 +16,7 @@ app.use('/', (rreq, res)=>{
             buscarPorId: 'GET /produtos/:id',
             cadastrar: 'POST /produtos',
             atualizar: 'PUT /produtos/:id',
-            remover: 'DELETE /produto/:id'
+            remover: 'DELETE /produtos/:id'
 
         }
     });
